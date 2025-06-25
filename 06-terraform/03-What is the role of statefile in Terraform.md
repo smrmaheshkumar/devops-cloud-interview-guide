@@ -6,6 +6,10 @@ In Terraform, the **state file** is a crucial JSON file that acts as a map betwe
 It stores information about your infrastructure's current state, including resource IDs, attributes, and dependencies. 
 This allows Terraform to understand what needs to be created, updated, or destroyed when you run commands like **terraform apply**
 
+(or)
+
+The Terraform state file is a JSON file that contains metadata about your managed infrastructure — essentially, a snapshot of the current state of the resources Terraform created.
+
 ---
 
 ### 🧠 Why is it Needed?
