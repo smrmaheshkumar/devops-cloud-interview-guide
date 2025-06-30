@@ -1,0 +1,98 @@
+### 📘 What is a **CRD** in Kubernetes?
+
+**CRD** stands for **Custom Resource Definition**.
+
+It allows you to **extend Kubernetes** by defining your own custom resource types—**just like Pods, Deployments, Services**, etc.—but tailored to your application's needs.
+
+---
+
+### 🧱 In Simple Terms
+
+* Kubernetes has built-in resources (Pods, Deployments, Services)
+* You can **create your own resource types** using a **CRD**
+* Once registered, you can **create, read, update, delete (CRUD)** those resources with `kubectl` just like any other
+
+---
+
+### 📦 Example Use Case
+
+You want a custom resource called `BackupJob` to represent backup tasks:
+
+1. Define a `BackupJob` **CRD**
+2. Create `BackupJob` resources in YAML
+3. Optionally write a **controller** (operator) that watches these and performs logic
+
+---
+
+### 📄 Example CRD YAML
+
+```yaml
+apiVersion: apiextensions.k8s.io/v1
+kind: CustomResourceDefinition
+metadata:
+  name: backupjobs.myorg.io
+spec:
+  group: myorg.io
+  names:
+    kind: BackupJob
+    plural: backupjobs
+    singular: backupjob
+  scope: Namespaced
+  versions:
+    - name: v1
+      served: true
+      storage: true
+      schema:
+        openAPIV3Schema:
+          type: object
+          properties:
+            spec:
+              type: object
+              properties:
+                schedule:
+                  type: string
+                target:
+                  type: string
+```
+
+---
+
+### 🧾 Then You Can Create Resources Like This:
+
+```yaml
+apiVersion: myorg.io/v1
+kind: BackupJob
+metadata:
+  name: daily-backup
+spec:
+  schedule: "0 2 * * *"
+  target: "database"
+```
+
+And apply it:
+
+```bash
+kubectl apply -f daily-backup.yaml
+```
+
+---
+
+### 🛠️ Tools That Use CRDs
+
+* **Cert-Manager** (`Certificate`, `Issuer`)
+* **Prometheus Operator** (`ServiceMonitor`)
+* **ArgoCD / Argo Workflows**
+* **Istio**, **Knative**, etc.
+
+---
+
+### ✅ Summary
+
+| Feature        | Description                          |
+| -------------- | ------------------------------------ |
+| CRD Stands For | Custom Resource Definition           |
+| Purpose        | Extend Kubernetes with custom types  |
+| Managed via    | `kubectl`, like native resources     |
+| Optional       | Add custom controller for automation |
+
+---
