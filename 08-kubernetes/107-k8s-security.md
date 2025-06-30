@@ -2,7 +2,7 @@ Improving **Kubernetes security** involves securing the **cluster components, wo
 
 ---
 
-## 🔐 1. **Authentication & Authorization**
+## 🔐 1. **Authentication & Authorization** 
 
 * ✅ Use **RBAC (Role-Based Access Control)** to define who can do what
 * ✅ Enable **multi-factor authentication (MFA)** for cluster access

@@ -1,6 +1,6 @@
 ### 🚀 What Are **Init Containers** in Kubernetes?
 
-**Init Containers** are special containers that **run before the main application containers** in a Pod. They are used to **perform setup tasks** that must complete **before** the main app starts.
+**Init Containers** are special containers that **run before the main application containers** in a Pod. They are used to **perform setup tasks** that must complete **before** the main app starts. 
 
 ---
 

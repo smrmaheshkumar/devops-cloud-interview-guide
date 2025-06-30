@@ -1,6 +1,6 @@
 ### 🛡️ **What is a Pod Disruption Budget (PDB)?**
 
-A **Pod Disruption Budget (PDB)** in Kubernetes is a policy that **limits the number of pods of a replicated application that can be down simultaneously** during **voluntary disruptions**.
+A **Pod Disruption Budget (PDB)** in Kubernetes is a policy that **limits the number of pods of a replicated application that can be down simultaneously** during **voluntary disruptions**. 
 
 ---
 

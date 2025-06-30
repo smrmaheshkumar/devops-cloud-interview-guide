@@ -1,7 +1,7 @@
 Kodekloud Link: https://github.com/smrmaheshkumar/Certified-Kubernetes-Administrator-Kodekloud/blob/master/docs/03-Scheduling/14-DaemonSets.md
 
 
-A **DaemonSet** is a type of Kubernetes resource that ensures a **copy of a pod runs on all (or selected) nodes** in a cluster.
+A **DaemonSet** is a type of Kubernetes resource that ensures a **copy of a pod runs on all (or selected) nodes** in a cluster.  
 
 ---
 

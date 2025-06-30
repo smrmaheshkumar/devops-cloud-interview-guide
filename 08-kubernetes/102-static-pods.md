@@ -1,6 +1,6 @@
 ### 🧱 What are **Static Pods** in Kubernetes?
 
-**Static Pods** are managed **directly by the kubelet** on a node—not by the Kubernetes control plane (like the API server, scheduler, etc.). They are **defined in local files** on a node and are mainly used for system-level or bootstrapping components.
+**Static Pods** are managed **directly by the kubelet** on a node—not by the Kubernetes control plane (like the API server, scheduler, etc.). They are **defined in local files** on a node and are mainly used for system-level or bootstrapping components.  
 
 ---
 

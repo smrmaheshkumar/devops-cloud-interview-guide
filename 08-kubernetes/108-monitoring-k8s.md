@@ -1,4 +1,4 @@
-Monitoring a Kubernetes cluster is crucial for ensuring **performance, reliability, and early issue detection**. Here’s a comprehensive breakdown of **how to monitor Kubernetes**, including **what to monitor, tools to use, and best practices**.
+Monitoring a Kubernetes cluster is crucial for ensuring **performance, reliability, and early issue detection**. Here’s a comprehensive breakdown of **how to monitor Kubernetes**, including **what to monitor, tools to use, and best practices**. 
 
 ---
 
