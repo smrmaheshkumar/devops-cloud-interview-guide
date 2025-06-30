@@ -29,7 +29,7 @@ strategy:
     maxUnavailable: 1
 ```
 
-- **Old pods are terminated one-by-one**, while **new pods are spun up gradually**.
+- **Old pods are terminated one-by-one**, while **new pods are spin up gradually**.
 - Ensures continuous availability with zero downtime.
 - Suitable for stateless workloads.
 
